@@ -1,0 +1,19 @@
+.MyWorksBlock {
+    height: 100%;
+    background-color: #f8f9fa;
+}
+
+.MyWorksContainer {
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.title {
+    background-color: #f8f9fa;
+}
+.work {
+    border: 1px solid;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
