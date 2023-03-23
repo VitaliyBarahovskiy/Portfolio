@@ -7,7 +7,9 @@ const MyWorks = () => {
     return (
         <div id={'progect'} className={styles.MyWorksBlock}>
             <div className={`${styleContainer.container} ${styles.MyWorksContainer}`}>
-                <h2 className={styles.title}>My works</h2>
+                <div  className={styles.title} >
+                    <h2>My works</h2>
+                </div>
                 <div className={styles.work}>
                     <MyWork title={'Todolist'} image={'img'}
                           description={'description'}/>

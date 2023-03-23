@@ -43,7 +43,7 @@
     color: initial;
     display: inline-block;
     background-color: white;
-    resize: auto;
+    resize: none;
     cursor: text;
     white-space: pre-wrap;
     overflow-wrap: break-word;

@@ -13,7 +13,7 @@ const Contacts = () => {
                         <input className={style.input} type="text"/>
                         <input className={style.input} type="text"/>
                         <textarea className={style.textarea}/>
-                        <input className={style.button} value={'send'} type="button"/>
+                        <button type="submit" className={style.button}>Send</button>
                     </form>
                 </div>
 
