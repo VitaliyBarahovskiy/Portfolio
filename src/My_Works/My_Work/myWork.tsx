@@ -1,21 +1,25 @@
 import React from 'react';
-import style from './myWork.module.css'
+import style from './myWork.module.scss'
 
 type WorkPropsType = {
     title: string
-    image: string
-    description: string
+    description: string,
+    style: any
 }
 
-const MyWork: React.FC<WorkPropsType> = ({title, image, description}) => {
+const MyWork = (props: WorkPropsType) => {
 
     return (
         <div className={style.work}>
-            <img className={style.img} src={image} alt="img work"/>
-            <h3>{title}</h3>
-            <span className={style.description}>
-                {description}
+            <div className={style.image} style={props.style}>
+                <a className={style.viewBtn}>Check</a>
+            </div>
+            <div className={style.projectInfo}>
+                <h3 className={style.workTitle}>{props.title}</h3>
+                <span className={style.description}>
+                {props.description}
             </span>
+            </div>
         </div>
     );
 }
